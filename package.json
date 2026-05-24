@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "npx @tailwindcss/cli -i ./src/style.css -o ./public/static/style.css && vite build",
-    "deploy": "wrangler pages deploy dist"
+    "deploy": "wrangler deploy"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,8 @@
     "hono": "^4.12.22"
   },
   "devDependencies": {
-    "@hono/vite-cloudflare-pages": "^0.4.3",
+    "@cloudflare/workers-types": "^4.20260524.1",
+    "@hono/vite-build": "^1.11.1",
     "@hono/vite-dev-server": "^0.26.0",
     "@tailwindcss/cli": "^4.3.0",
     "@tailwindcss/postcss": "^4.3.0",

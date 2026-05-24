@@ -2,6 +2,7 @@ name = "optic-landing-page"
 main = "src/index.tsx"
 compatibility_date = "2024-05-24"
 compatibility_flags = ["nodejs_compat"]
+assets = { directory = "public" }
 
 [build]
 command = "npm run build"

@@ -3,7 +3,7 @@ import { html } from 'hono/html'
 export const Layout = (props: { children: any; title?: string }) => {
   return html`
     <!DOCTYPE html>
-    <html lang="es">
+    <html lang="es" class="scroll-smooth scroll-pt-24">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@ export const Layout = (props: { children: any; title?: string }) => {
         <link href="/static/style.css" rel="stylesheet" />
       </head>
       <body class="bg-white text-gray-800 font-sans antialiased flex flex-col min-h-screen">
-        <header class="bg-white shadow-sm">
+        <header class="bg-white shadow-sm sticky top-0 z-50">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-primary flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
